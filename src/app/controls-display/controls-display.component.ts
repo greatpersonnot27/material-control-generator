@@ -10,7 +10,7 @@ export class ControlsDisplayComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.inputJson = JSON.parse(history.state.data);
+    this.inputJson = history.state ? JSON.parse(history.state.data): {};
   //   this.inputJson = {
   //     controls: [
   //       {
@@ -41,6 +41,7 @@ export class ControlsDisplayComponent implements OnInit {
    }
 
   generateCss(cssParams: any) {
+    console.log({position: 'absolute', left: cssParams.x + 'px', top: cssParams.y + 'px', width: cssParams.width + 'px', height: cssParams.height + 'px'})
     return {position: 'absolute', left: cssParams.x + 'px', top: cssParams.y + 'px', width: cssParams.width + 'px', height: cssParams.height + 'px'}
   }
 }
