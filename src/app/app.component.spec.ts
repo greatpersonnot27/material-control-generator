@@ -26,10 +26,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('material-control-generator');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('material-control-generator app is running!');
-  });
+  // Disable until the CI is set up
+  // it('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement;
+  //   expect(compiled.querySelector('.content span').textContent).toContain('material-control-generator app is running!');
+  // });
 });
