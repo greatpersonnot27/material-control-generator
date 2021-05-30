@@ -1,0 +1,21 @@
+.center {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.form {
+  width:100%;
+}
+
+
+#mainTextArea {
+  resize: none;
+  height: 300px;
+}
+
+#generateButton {
+  display: block;
+  margin: auto;
+}

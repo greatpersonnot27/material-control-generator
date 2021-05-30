@@ -26,10 +26,10 @@ export class JsonLoaderComponent implements OnInit {
   validateJson(text: string) {
     try {
       JSON.parse(text);
-      this.statusMessage = 'No mistakes found!';
+      this.statusMessage = ''
       return true;
     } catch (e) {
-      this.statusMessage = e.message;
+      this.statusMessage = text == '' ? '': e.message;
       return false;
     }
   }
