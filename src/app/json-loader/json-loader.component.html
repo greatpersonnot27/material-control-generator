@@ -1,0 +1,4 @@
+<p>json-loader</p>
+<textarea cols="30" rows="4" [(ngModel)]="jsonText" (ngModelChange)='inputHandler()'></textarea>
+<p>{{statusMessage}}</p>
+<p><button [disabled]="buttonStatus"  (click)="displayResult()">GO</button></p>
