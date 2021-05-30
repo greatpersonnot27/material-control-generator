@@ -1,4 +1,11 @@
-<p>controls-display works!</p>
-<button></button>
-<button></button>
-<button></button>
+<ng-template ngFor let-item [ngForOf]="inputJson.controls">
+  <ng-template [ngIf]="item.type == 'Button'"
+    ><button [ngStyle]="generateCss(item)">{{item.text}}</button>
+  </ng-template>
+  <ng-template [ngIf]="item.type == 'Label'"
+    ><label [ngStyle]="generateCss(item)">{{item.text}}</label>
+  </ng-template>
+  <ng-template [ngIf]="item.type == 'Slider'"
+    ><input [ngStyle]="generateCss(item)" type='range' min="1" max="100" value={{item.value}}/>
+  </ng-template>
+</ng-template>

@@ -16,12 +16,11 @@ export class JsonLoaderComponent implements OnInit {
   ngOnInit(): void {}
 
   displayResult() {
-    this.router.navigate(['/result'], {state: {data: this.jsonText}})
+    this.router.navigate(['/result'], { state: { data: this.jsonText } });
   }
 
   inputHandler() {
-    var res = this.validateJson(this.jsonText);
-    this.buttonStatus =  !res;
+    this.buttonStatus = !this.validateJson(this.jsonText);
   }
 
   validateJson(text: string) {
