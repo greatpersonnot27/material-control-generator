@@ -84,7 +84,7 @@ class JsonLoaderComponent {
     }
 }
 JsonLoaderComponent.ɵfac = function JsonLoaderComponent_Factory(t) { return new (t || JsonLoaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_control_db_service__WEBPACK_IMPORTED_MODULE_2__["ControlDbService"])); };
-JsonLoaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: JsonLoaderComponent, selectors: [["app-json-loader"]], decls: 9, vars: 4, consts: [["id", "mainForm", 1, "center"], ["aria-label", "Control selection"], ["ngFor", "", 3, "ngForOf"], ["appearance", "fill", 1, "form"], ["id", "mainTextArea", "matInput", "", 3, "ngModel", "ngModelChange"], ["mat-raised-button", "", "color", "accent", "id", "generateButton", 3, "disabled", "click"], ["id", "statusMessage"], ["color", "accent", 3, "selected", "click"]], template: function JsonLoaderComponent_Template(rf, ctx) { if (rf & 1) {
+JsonLoaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: JsonLoaderComponent, selectors: [["app-json-loader"]], decls: 9, vars: 6, consts: [["id", "mainForm", 1, "center"], ["aria-label", "Control selection"], ["ngFor", "", 3, "ngForOf"], ["appearance", "fill", 1, "form"], ["id", "mainTextArea", "matInput", "", 3, "ngModel", "ngModelChange"], ["mat-raised-button", "", "color", "accent", "id", "generateButton", 3, "disabled", "click"], ["id", "statusMessage"], ["color", "accent", 3, "selected", "click"]], template: function JsonLoaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-chip-list", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, JsonLoaderComponent_ng_template_2_Template, 3, 6, "ng-template", 2);
@@ -103,6 +103,7 @@ JsonLoaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("mat-elevation-z2", true);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.dbService.getControls());
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
@@ -111,7 +112,7 @@ JsonLoaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.buttonStatus);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.statusMessage);
-    } }, directives: [_angular_material_chips__WEBPACK_IMPORTED_MODULE_3__["MatChipList"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatFormField"], _angular_material_input__WEBPACK_IMPORTED_MODULE_6__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgModel"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_3__["MatChip"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["SlicePipe"]], styles: [".center[_ngcontent-%COMP%] {\r\n  width: 80%;\r\n  max-width: 800px;\r\n  margin: auto;\r\n  margin-top: 5%;\r\n}\r\n\r\n.form[_ngcontent-%COMP%] {\r\n  margin-top:15px;\r\n  width:100%;\r\n}\r\n\r\n#mainTextArea[_ngcontent-%COMP%] {\r\n  resize: none;\r\n  height: 300px;\r\n}\r\n\r\n#generateButton[_ngcontent-%COMP%] {\r\n  #display: block;\r\n  #margin: auto;\r\n}\r\n\r\n#statusMessage[_ngcontent-%COMP%] {\r\n  padding:3px;\r\n  color: #ff5050;\r\n  font-family: Roboto, \"Helvetica Neue\", sans-serif;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  float: right;\r\n}\r\n\r\nmat-chip[_ngcontent-%COMP%] {\r\n  cursor: pointer;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImpzb24tbG9hZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLFVBQVU7QUFDWjs7QUFHQTtFQUNFLFlBQVk7RUFDWixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsYUFBYTtBQUNmOztBQUVBO0VBQ0UsV0FBVztFQUNYLGNBQWM7RUFDZCxpREFBaUQ7RUFDakQsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCIiwiZmlsZSI6Impzb24tbG9hZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2VudGVyIHtcclxuICB3aWR0aDogODAlO1xyXG4gIG1heC13aWR0aDogODAwcHg7XHJcbiAgbWFyZ2luOiBhdXRvO1xyXG4gIG1hcmdpbi10b3A6IDUlO1xyXG59XHJcblxyXG4uZm9ybSB7XHJcbiAgbWFyZ2luLXRvcDoxNXB4O1xyXG4gIHdpZHRoOjEwMCU7XHJcbn1cclxuXHJcblxyXG4jbWFpblRleHRBcmVhIHtcclxuICByZXNpemU6IG5vbmU7XHJcbiAgaGVpZ2h0OiAzMDBweDtcclxufVxyXG5cclxuI2dlbmVyYXRlQnV0dG9uIHtcclxuICAjZGlzcGxheTogYmxvY2s7XHJcbiAgI21hcmdpbjogYXV0bztcclxufVxyXG5cclxuI3N0YXR1c01lc3NhZ2Uge1xyXG4gIHBhZGRpbmc6M3B4O1xyXG4gIGNvbG9yOiAjZmY1MDUwO1xyXG4gIGZvbnQtZmFtaWx5OiBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgc2Fucy1zZXJpZjtcclxuICBmb250LXNpemU6IDE0cHg7XHJcbiAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICBmbG9hdDogcmlnaHQ7XHJcbn1cclxuXHJcbm1hdC1jaGlwIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuIl19 */"] });
+    } }, directives: [_angular_material_chips__WEBPACK_IMPORTED_MODULE_3__["MatChipList"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatFormField"], _angular_material_input__WEBPACK_IMPORTED_MODULE_6__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgModel"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_3__["MatChip"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["SlicePipe"]], styles: [".center[_ngcontent-%COMP%] {\r\n  width: 80%;\r\n  max-width: 800px;\r\n  margin: auto;\r\n  margin-top: 5%;\r\n}\r\n\r\n.form[_ngcontent-%COMP%] {\r\n  margin-top:15px;\r\n  width:100%;\r\n}\r\n\r\n#mainForm[_ngcontent-%COMP%] {\r\n  padding: 20px;\r\n  background-color: white;\r\n}\r\n\r\n#mainTextArea[_ngcontent-%COMP%] {\r\n  resize: none;\r\n  height: 300px;\r\n}\r\n\r\n\r\n\r\n#statusMessage[_ngcontent-%COMP%] {\r\n  padding:3px;\r\n  color: #ff5050;\r\n  font-family: Roboto, \"Helvetica Neue\", sans-serif;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  float: right;\r\n}\r\n\r\nmat-chip[_ngcontent-%COMP%] {\r\n  cursor: pointer;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImpzb24tbG9hZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osYUFBYTtBQUNmOztBQUVBOzs7R0FHRzs7QUFFSDtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2QsaURBQWlEO0VBQ2pELGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtBQUNqQiIsImZpbGUiOiJqc29uLWxvYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNlbnRlciB7XHJcbiAgd2lkdGg6IDgwJTtcclxuICBtYXgtd2lkdGg6IDgwMHB4O1xyXG4gIG1hcmdpbjogYXV0bztcclxuICBtYXJnaW4tdG9wOiA1JTtcclxufVxyXG5cclxuLmZvcm0ge1xyXG4gIG1hcmdpbi10b3A6MTVweDtcclxuICB3aWR0aDoxMDAlO1xyXG59XHJcblxyXG4jbWFpbkZvcm0ge1xyXG4gIHBhZGRpbmc6IDIwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbiNtYWluVGV4dEFyZWEge1xyXG4gIHJlc2l6ZTogbm9uZTtcclxuICBoZWlnaHQ6IDMwMHB4O1xyXG59XHJcblxyXG4vKiAjZ2VuZXJhdGVCdXR0b24ge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIG1hcmdpbjogYXV0bztcclxufSAqL1xyXG5cclxuI3N0YXR1c01lc3NhZ2Uge1xyXG4gIHBhZGRpbmc6M3B4O1xyXG4gIGNvbG9yOiAjZmY1MDUwO1xyXG4gIGZvbnQtZmFtaWx5OiBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgc2Fucy1zZXJpZjtcclxuICBmb250LXNpemU6IDE0cHg7XHJcbiAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICBmbG9hdDogcmlnaHQ7XHJcbn1cclxuXHJcbm1hdC1jaGlwIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuIl19 */"] });
 
 
 /***/ }),
@@ -356,45 +357,30 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineInjecto
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ControlDbService", function() { return ControlDbService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _default_controllers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./default-controllers */ "wJww");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
 
 class ControlDbService {
     constructor() {
         this.unnamedIndex = 1;
-        this.controlsDb = [{
-                "name": "Deafult Control",
-                "controls": [{
-                        "type": "Button",
-                        "x": 10,
-                        "y": 20,
-                        "width": 80,
-                        "height": 40,
-                        "text": "Button"
-                    },
-                    {
-                        "type": "Label",
-                        "x": 10,
-                        "y": 60,
-                        "width": 80,
-                        "height": 40,
-                        "text": "Label"
-                    },
-                    {
-                        "type": "Slider",
-                        "x": 10,
-                        "y": 80,
-                        "width": 100,
-                        "value": 50
-                    }]
-            }
-        ];
+        this.controlsDb = [{}];
+        this.loadState();
     }
     addControl(control) {
         if (!('name' in control) || control.name.startsWith('Unnamed #')) {
             control.name = 'Unnamed #' + this.unnamedIndex;
             this.unnamedIndex += 1;
         }
-        this.controlsDb.push(control);
+        let index = this.controlsDb.findIndex((comp) => comp.name == control.name);
+        if (index == -1) {
+            this.controlsDb.push(control);
+        }
+        else {
+            this.controlsDb[index] = control;
+            return index;
+        }
+        this.saveState();
         return this.controlsDb.length - 1;
     }
     getControls(limit = 10) {
@@ -403,9 +389,24 @@ class ControlDbService {
     getControl(index) {
         return this.controlsDb[index];
     }
+    saveState() {
+        localStorage.setItem('controls', JSON.stringify(this.controlsDb));
+        localStorage.setItem('unnamedIndex', String(this.unnamedIndex));
+    }
+    loadState() {
+        let state = localStorage.getItem('controls');
+        if (state == null) {
+            this.controlsDb = _default_controllers__WEBPACK_IMPORTED_MODULE_0__["defaultControllers"];
+        }
+        else {
+            this.controlsDb = JSON.parse(state);
+        }
+        let index = localStorage.getItem('unnamedIndex');
+        this.unnamedIndex = index == null ? 1 : Number(index);
+    }
 }
 ControlDbService.ɵfac = function ControlDbService_Factory(t) { return new (t || ControlDbService)(); };
-ControlDbService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ControlDbService, factory: ControlDbService.ɵfac, providedIn: 'root' });
+ControlDbService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: ControlDbService, factory: ControlDbService.ɵfac, providedIn: 'root' });
 
 
 /***/ }),
@@ -439,6 +440,134 @@ AppRoutingModule.ɵfac = function AppRoutingModule_Factory(t) { return new (t ||
 AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
 AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
+
+
+/***/ }),
+
+/***/ "wJww":
+/*!****************************************!*\
+  !*** ./src/app/default-controllers.ts ***!
+  \****************************************/
+/*! exports provided: defaultControllers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultControllers", function() { return defaultControllers; });
+const defaultControllers = [
+    {
+        name: 'Default #1',
+        controls: [
+            {
+                type: 'Button',
+                x: 10,
+                y: 20,
+                width: 80,
+                height: 40,
+                text: 'Search',
+            },
+            {
+                type: 'Button',
+                x: 100,
+                y: 20,
+                width: 80,
+                height: 40,
+                text: 'Maps',
+            },
+            {
+                type: 'Button',
+                x: 190,
+                y: 20,
+                width: 80,
+                height: 40,
+                text: 'Calendar',
+            },
+            {
+                type: 'Label',
+                x: 10,
+                y: 80,
+                width: 50,
+                height: 20,
+                text: 'Date',
+            },
+            {
+                type: 'Label',
+                x: 100,
+                y: 80,
+                width: 50,
+                height: 20,
+                text: 'Day',
+            },
+            {
+                type: 'Label',
+                x: 190,
+                y: 80,
+                width: 50,
+                height: 20,
+                text: 'Time',
+            },
+            {
+                type: 'Slider',
+                x: 10,
+                y: 140,
+                width: 280,
+                value: 50,
+            },
+        ],
+    },
+];
+defaultControllers.push({
+    name: 'Default #2',
+    controls: [
+        {
+            type: 'Button',
+            x: 10,
+            y: 20,
+            width: 200,
+            height: 150,
+            text: 'Search',
+        },
+        {
+            type: 'Button',
+            x: 220,
+            y: 20,
+            width: 200,
+            height: 150,
+            text: 'Maps',
+        },
+        {
+            type: 'Label',
+            x: 10,
+            y: 200,
+            width: 200,
+            height: 150,
+            text: 'Date',
+        },
+        {
+            type: 'Label',
+            x: 250,
+            y: 200,
+            width: 200,
+            height: 150,
+            text: 'Day',
+        },
+        {
+            type: 'Slider',
+            x: 10,
+            y: 400,
+            width: 280,
+            value: 50,
+        },
+        {
+            type: 'Slider',
+            x: 10,
+            y: 500,
+            width: 280,
+            value: 50,
+        },
+    ],
+});
+
 
 
 /***/ }),
