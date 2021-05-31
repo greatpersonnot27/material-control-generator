@@ -1,5 +1,9 @@
 <div id="mainForm" class='center'>
-  <p>{{ statusMessage }}</p>
+    <mat-chip-list  aria-label="Control selection">
+        <ng-template ngFor let-component [ngForOf]="dbService.getControls()" let-i="index">
+	    <mat-chip [selected]="i == this.selectedControls" (click)="selectComponent(i)" color="accent">{{ component.name|slice:0:15 }}</mat-chip>
+	</ng-template>
+    </mat-chip-list>
   <mat-form-field class='form' appearance="fill">
     <textarea id='mainTextArea'
       [(ngModel)]="jsonText"
@@ -15,4 +19,6 @@
   >
     Generate Controls
   </button>
+  <p id="statusMessage">{{ statusMessage }}</p>
+
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ControlDbService } from '../control-db.service'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-controls-display',
@@ -7,41 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlsDisplayComponent implements OnInit {
   inputJson: any = {};
-  constructor() {}
+  constructor(private dbService: ControlDbService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.inputJson = history.state ? JSON.parse(history.state.data): {};
-  //   this.inputJson = {
-  //     controls: [
-  //       {
-  //         type: 'Button',
-  //         x: 110,
-  //         y: 20,
-  //         width: 800,
-  //         height: 40,
-  //         text: 'Button',
-  //       },
-  //       {
-  //         type: 'Label',
-  //         x: 10,
-  //         y: 600,
-  //         width: 80,
-  //         height: 400,
-  //         text: 'Label',
-  //       },
-  //       {
-  //         type: 'Slider',
-  //         x: 102,
-  //         y: 810,
-  //         width: 100,
-  //         value: 50,
-  //       },
-  //     ],
-  //   };
+    let index = Number(this.route.snapshot.paramMap.get('id'));
+    this.inputJson = this.dbService.getControl(index);
    }
 
   generateCss(cssParams: any) {
-    console.log({position: 'absolute', left: cssParams.x + 'px', top: cssParams.y + 'px', width: cssParams.width + 'px', height: cssParams.height + 'px'})
     return {position: 'absolute', left: cssParams.x + 'px', top: cssParams.y + 'px', width: cssParams.width + 'px', height: cssParams.height + 'px'}
   }
 }

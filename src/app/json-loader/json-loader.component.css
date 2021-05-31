@@ -6,6 +6,7 @@
 }
 
 .form {
+  margin-top:15px;
   width:100%;
 }
 
@@ -16,6 +17,19 @@
 }
 
 #generateButton {
-  display: block;
-  margin: auto;
+  #display: block;
+  #margin: auto;
+}
+
+#statusMessage {
+  padding:3px;
+  color: #ff5050;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  float: right;
+}
+
+mat-chip {
+  cursor: pointer;
 }

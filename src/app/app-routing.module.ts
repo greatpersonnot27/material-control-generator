@@ -5,7 +5,7 @@ import { JsonLoaderComponent } from './json-loader/json-loader.component';
 
 const routes: Routes = [
   { path: '', component: JsonLoaderComponent },
-  { path: 'result', component: ControlsDisplayComponent },
+  { path: 'result/:id', component: ControlsDisplayComponent },
 ];
 
 @NgModule({
