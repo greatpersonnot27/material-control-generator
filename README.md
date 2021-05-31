@@ -1,6 +1,6 @@
 
 # Material Control Generator
-
+[![Build Status](https://travis-ci.com/greatpersonnot27/material-control-generator.svg?branch=main)](https://travis-ci.com/greatpersonnot27/material-control-generator)
 ## Table of contents
 * [General info](#general-info)
 * [JSON file structure](#json-file-structure)
