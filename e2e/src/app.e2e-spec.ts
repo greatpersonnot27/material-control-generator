@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', async () => {
+  it('shoud be empty', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('material-control-generator app is running!');
+    expect(await page).toEqual(new AppPage());
   });
 
   afterEach(async () => {
