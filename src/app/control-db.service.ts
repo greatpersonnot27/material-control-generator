@@ -24,6 +24,7 @@ export class ControlDbService {
     this.controlsDb.push(control);
     } else {
       this.controlsDb[index] = control;
+      return index;
     }
     this.saveState()
     return this.controlsDb.length - 1;

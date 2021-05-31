@@ -10,16 +10,20 @@
   width:100%;
 }
 
+#mainForm {
+  padding: 20px;
+  background-color: white;
+}
 
 #mainTextArea {
   resize: none;
   height: 300px;
 }
 
-#generateButton {
-  #display: block;
-  #margin: auto;
-}
+/* #generateButton {
+  display: block;
+  margin: auto;
+} */
 
 #statusMessage {
   padding:3px;
