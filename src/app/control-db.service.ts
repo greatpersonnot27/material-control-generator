@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
+import { defaultControllers } from './default-controllers';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ControlDbService {
   controlsDb: [any];
@@ -9,32 +10,8 @@ export class ControlDbService {
 
   constructor() {
     this.unnamedIndex = 1;
-    this.controlsDb = [{
-      "name" : "Deafult Control",
-     "controls": [{
-       "type": "Button",
-       "x": 10,
-       "y": 20,
-       "width": 80,
-       "height": 40,
-       "text": "Button"
-     },
-     {
-       "type": "Label",
-       "x": 10,
-       "y": 60,
-       "width": 80,
-       "height": 40,
-       "text": "Label"
-     },
-     {
-       "type": "Slider",
-       "x": 10,
-       "y": 80,
-       "width": 100,
-       "value": 50
-     }]}
-    ];
+    this.controlsDb = [{}];
+    this.loadState();
   }
 
   addControl(control: any) {
@@ -42,8 +19,14 @@ export class ControlDbService {
       control.name = 'Unnamed #' + this.unnamedIndex;
       this.unnamedIndex += 1;
     }
-
+    let index = this.controlsDb.findIndex((comp) => comp.name == control.name);
+    if (index == -1) {
     this.controlsDb.push(control);
+    } else {
+      this.controlsDb[index] = control;
+      return index;
+    }
+    this.saveState()
     return this.controlsDb.length - 1;
   }
 
@@ -53,6 +36,22 @@ export class ControlDbService {
 
   getControl(index: number) {
     return this.controlsDb[index];
+  }
 
+  saveState() {
+    localStorage.setItem('controls', JSON.stringify(this.controlsDb));
+    localStorage.setItem('unnamedIndex', String(this.unnamedIndex));
+  }
+
+  loadState() {
+    let state = localStorage.getItem('controls');
+    if (state == null) {
+      this.controlsDb = defaultControllers;
+    } else {
+      this.controlsDb = JSON.parse(state);
+    }
+
+    let index = localStorage.getItem('unnamedIndex');
+    this.unnamedIndex = index == null ? 1 : Number(index);
   }
 }

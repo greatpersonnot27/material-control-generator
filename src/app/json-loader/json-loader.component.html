@@ -1,4 +1,4 @@
-<div id="mainForm" class='center'>
+<div id="mainForm" class='center' [class.mat-elevation-z2]="true">
     <mat-chip-list  aria-label="Control selection">
         <ng-template ngFor let-component [ngForOf]="dbService.getControls()" let-i="index">
 	    <mat-chip [selected]="i == this.selectedControls" (click)="selectComponent(i)" color="accent">{{ component.name|slice:0:15 }}</mat-chip>
